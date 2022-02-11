@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Habiki Mean Options
+  m_EditorClassIdentifier: 
+  repFactor: 0
+  studentPop: 0
+  target: {fileID: 0}
+  _dialogueLine: []
+  responses:
+  - responseText: Insult
+    dialogueObject: {fileID: 11400000, guid: 10a55fc2e0ebee2479f2043953d6dba9, type: 2}
+  - responseText: Gossip
+    dialogueObject: {fileID: 11400000, guid: de511df012d3be9439e99c54c295c12d, type: 2}
+  - responseText: Manipulate
+    dialogueObject: {fileID: 11400000, guid: cb1919f57d82e3c4e9847825e70137a6, type: 2}

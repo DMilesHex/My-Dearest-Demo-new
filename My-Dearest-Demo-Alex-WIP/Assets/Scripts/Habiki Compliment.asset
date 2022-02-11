@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Habiki Compliment
+  m_EditorClassIdentifier: 
+  repFactor: 0
+  _dialogueLine:
+  - _npcName: 0
+    _lineText: (What should I talk about?)
+  responses:
+  - responseText: Looks
+    dialogueObject: {fileID: 11400000, guid: f28d1804ff90e53418c45aea8f4e4015, type: 2}
+  - responseText: Birdwatching
+    dialogueObject: {fileID: 11400000, guid: 5f562bff5b1df054a94f6554d5032eda, type: 2}
+  - responseText: Photography
+    dialogueObject: {fileID: 11400000, guid: 57cd56f0ead6b39439f9ab3ec080bfed, type: 2}
+  - responseText: Grades
+    dialogueObject: {fileID: 11400000, guid: 7b3593b3d417f984184e173a93790231, type: 2}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Minori Habiki Gossip
+  m_EditorClassIdentifier: 
+  repFactor: -2
+  studentPop: -2
+  target: {fileID: 6764827563373546855, guid: 25c80ae67dcea274b8617963def0ef2e, type: 3}
+  _dialogueLine:
+  - npcName: 0
+    portrait: {fileID: 21300000, guid: e0fa3714f88673f478f5c4c3fb64a0c1, type: 3}
+    _lineText: Did you know Habiki likes birds?
+  - npcName: 6
+    portrait: {fileID: 21300000, guid: f7dcdf1f8aeff4749b511bf6e0741b18, type: 3}
+    _lineText: 'Yeah? So? '
+  - npcName: 0
+    portrait: {fileID: 21300000, guid: e0fa3714f88673f478f5c4c3fb64a0c1, type: 3}
+    _lineText: 'Specifically birds that eat fish. '
+  - npcName: 6
+    portrait: {fileID: 21300000, guid: f7dcdf1f8aeff4749b511bf6e0741b18, type: 3}
+    _lineText: W-what???
+  responses: []

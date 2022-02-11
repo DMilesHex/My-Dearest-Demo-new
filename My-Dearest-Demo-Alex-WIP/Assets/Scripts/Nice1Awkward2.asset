@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Nice1Awkward2
+  m_EditorClassIdentifier: 
+  _dialogueLine:
+  - _npcName: 0
+    _lineText: Um. . .Cool, I guess?
+  - _npcName: 1
+    _lineText: Hm.
+  - _npcName: 3
+    _lineText: '*Manami looks out of place. She turns her head to Ryo, silently asking
+      for guidance. He smiles in compliance.*'
+  - _npcName: 2
+    _lineText: So, what is it you like to do, Manami?
+  - _npcName: 0
+    _lineText: "I uh. . .Baking! I like baking a lot. . .And I have a bunny. He\u2019s.
+      . .Super cute."
+  - _npcName: 2
+    _lineText: His name is Akachan - a sassy little beast!
+  - _npcName: 1
+    _lineText: The one time I held a rabbit i-i-it. . .It peed on. . .me.
+  - _npcName: 3
+    _lineText: '*Manami and Ryo awkwardly stare at Habiki. How do you respond to that?*'
+  - _npcName: 0
+    _lineText: "Heh. . .That sucks. I don\u2019t think Akachan would do something.
+      . .Gross like that. He\u2019s a good boy."
+  - _npcName: 1
+    _lineText: Hm. . .
+  - _npcName: 2
+    _lineText: "Well uh. . .Hey! Manami and I are going to talk for a bit, okay? We\u2019ll
+      catch up after class, alright?"
+  - _npcName: 1
+    _lineText: O-Okay. . .
+  - _npcName: 3
+    _lineText: '*Habiki scuttles off, leaving the pair alone.*'
+  - _npcName: 3
+    _lineText: "*Ryo\u2019s attention turns fully to Manami, a warm smile upon his
+      lips.*"
+  - _npcName: 2
+    _lineText: "You doing okay there, Manami? What\u2019s on your mind?"

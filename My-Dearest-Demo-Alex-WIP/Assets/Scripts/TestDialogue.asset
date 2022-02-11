@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: TestDialogue
+  m_EditorClassIdentifier: 
+  repFactor: 1
+  studentPop: 0
+  target: {fileID: 0}
+  _dialogueLine:
+  - _npcName: 0
+    _lineText: "Ah! Hello, Habiki. I\u2019m Manami. "
+    portrait: {fileID: 21300000, guid: e0fa3714f88673f478f5c4c3fb64a0c1, type: 3}
+  - _npcName: 3
+    _lineText: '*Habiki timidly looks at Manami, though a faint smile forms.*'
+    portrait: {fileID: 0}
+  - _npcName: 1
+    _lineText: . . .H-Hi Manami.
+    portrait: {fileID: 21300000, guid: de4338b3b7431b2479a42f66bdb61ed3, type: 3}
+  - _npcName: 0
+    _lineText: " I simply adore your clip, by the way. It\u2019s so cute!"
+    portrait: {fileID: 21300000, guid: e0fa3714f88673f478f5c4c3fb64a0c1, type: 3}
+  - _npcName: 3
+    _lineText: '*Habiki grows visibly flushed, her smile only growing. She simply
+      bows her head in gratitude.*'
+    portrait: {fileID: 0}
+  - _npcName: 3
+    _lineText: '*Ryo smiles in kin. Things seem to be going smoothly.*
+
+'
+    portrait: {fileID: 0}
+  - _npcName: 2
+    _lineText: Tell her a bit about yourself, Habiki.
+    portrait: {fileID: 21300000, guid: 5620928a9d82f2648a8432f7249c681f, type: 3}
+  - _npcName: 1
+    _lineText: ' I um. . .I-i really like. . .Birds.'
+    portrait: {fileID: 21300000, guid: de4338b3b7431b2479a42f66bdb61ed3, type: 3}
+  - _npcName: 3
+    _lineText: '*Habiki swallows, clearly nervous. She composes herself the best
+      as she could.*
+
+'
+    portrait: {fileID: 0}
+  - _npcName: 1
+    _lineText: "I often am o-out by t-t-the sakura tree b-behind the school; there\u2019s.
+      . .A lot of beautiful birds to watch t-. . .There. "
+    portrait: {fileID: 21300000, guid: de4338b3b7431b2479a42f66bdb61ed3, type: 3}
+  responses:
+  - responseText: Nice
+    dialogueObject: {fileID: 11400000, guid: dc22ac3cd1ef6924fb703226a7a8ee7c, type: 2}
+  - responseText: Mean
+    dialogueObject: {fileID: 11400000, guid: 8701d21c5aba5904d912891ed714dfb6, type: 2}
+  - responseText: Awkward
+    dialogueObject: {fileID: 11400000, guid: f0e1bc6b82c4fa94db5729fa2f192002, type: 2}

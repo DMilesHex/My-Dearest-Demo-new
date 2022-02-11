@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Habiki Gossip
+  m_EditorClassIdentifier: 
+  repFactor: 0
+  studentPop: 0
+  target: {fileID: 0}
+  _dialogueLine: []
+  responses:
+  - responseText: Kyoko
+    dialogueObject: {fileID: 11400000, guid: 4c9df8eb2d74bb7489feb15ec83490ea, type: 2}
+  - responseText: Miyu
+    dialogueObject: {fileID: 11400000, guid: ce6c007d7873be5489902340d65917f7, type: 2}
+  - responseText: Fumiko
+    dialogueObject: {fileID: 11400000, guid: 06fda19a4e9cf884e8e00fd80905cba5, type: 2}

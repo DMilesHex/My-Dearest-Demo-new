@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Minori Friendly
+  m_EditorClassIdentifier: 
+  repFactor: 0
+  studentPop: 0
+  target: {fileID: 0}
+  _dialogueLine: []
+  responses:
+  - responseText: Greet
+    dialogueObject: {fileID: 11400000, guid: de04ca1d2989acf4fa390127475ef2da, type: 2}
+  - responseText: Get to Know
+    dialogueObject: {fileID: 11400000, guid: 065c00fde96a1aa4fb7bfd7752a92d00, type: 2}
+  - responseText: Compliment
+    dialogueObject: {fileID: 11400000, guid: fc7790663bf2740438fb5dfa6c76c2af, type: 2}
+  - responseText: Favour
+    dialogueObject: {fileID: 11400000, guid: 4ce3729f2f3ff50448cbc0cbd902e14b, type: 2}
+  - responseText: Gift
+    dialogueObject: {fileID: 11400000, guid: 575aaa2ce7d2afc42bbdb9d8fa798c1e, type: 2}

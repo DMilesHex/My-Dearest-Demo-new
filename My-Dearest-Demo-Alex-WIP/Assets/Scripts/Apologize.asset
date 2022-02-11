@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Apologize
+  m_EditorClassIdentifier: 
+  _dialogueLine:
+  - _npcName: 0
+    _lineText: "I\u2019m. . .I\u2019m sorry. T-Today has just been stressful."
+  - _npcName: 2
+    _lineText: "Hey, it\u2019s okay. But you don\u2019t need to take it out on others,
+      yeah? You\u2019re better than that."
+  - _npcName: 3
+    _lineText: "*Ryo places his shoulder upon Manami\u2019s. Her face feels warm.*"
+  - _npcName: 2
+    _lineText: "Let\u2019s talk after class, okay? You can vent to me then."
+  - _npcName: 0
+    _lineText: "Alright. . .I\u2019m going to go cool off, okay?"
+  - _npcName: 2
+    _lineText: Very well.
+  - _npcName: 0
+    _lineText: "I\u2019m sorry again, Habiki."
+  - _npcName: 1
+    _lineText: "I-I. . .I-It\u2019s okay. . ."

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Nice1Mean2
+  m_EditorClassIdentifier: 
+  _dialogueLine:
+  - _npcName: 0
+    _lineText: "You seem as flighty as a bird, so it\u2019s fitting, I guess. . ."
+  - _npcName: 3
+    _lineText: '*Habiki dips her head down dejectedly. She tries to form words, only
+      to press her lips shut.*'
+  - _npcName: 2
+    _lineText: "Nonsense, Habiki. Manami, I\u2019m. . .Shocked really. This isn\u2019t
+      like you."
+  - _npcName: 3
+    _lineText: "*Manami peers between the pair. There\u2019s an apathy in her eyes,
+      which only softens the longer she looks at Ryo.*"

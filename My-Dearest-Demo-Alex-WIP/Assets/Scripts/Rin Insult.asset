@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Rin Insult
+  m_EditorClassIdentifier: 
+  repFactor: -2
+  studentPop: 0
+  target: {fileID: 0}
+  _dialogueLine:
+  - npcName: 0
+    portrait: {fileID: 21300000, guid: e0fa3714f88673f478f5c4c3fb64a0c1, type: 3}
+    _lineText: ' I thought the school had a garbage chute for you to hang out in.'
+  - npcName: 4
+    portrait: {fileID: 21300000, guid: 7234b949525f5e845b66f086bae3ca11, type: 3}
+    _lineText: "You don\u2019t need to be the tough girl for all the rest, all right?
+      I\u2019ve got more than enough customers on my plate and I can cut you off
+      in a heartbeat."
+  responses: []

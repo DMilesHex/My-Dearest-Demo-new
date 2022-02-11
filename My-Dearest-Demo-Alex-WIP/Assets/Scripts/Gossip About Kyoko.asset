@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Gossip About Kyoko
+  m_EditorClassIdentifier: 
+  repFactor: 0
+  studentPop: -2
+  target: {fileID: 7121672939656969999, guid: 884ffb89bd05ee64ea73438889a4ef49, type: 3}
+  _dialogueLine:
+  - _npcName: 0
+    _lineText: 'Kyoko''s been telling your parents about your grades. She''s the
+      cause of their disappointment. '
+  - _npcName: 0
+    _lineText: 'What''s more, she''s been telling EVERYONE about your grades. '
+  responses: []

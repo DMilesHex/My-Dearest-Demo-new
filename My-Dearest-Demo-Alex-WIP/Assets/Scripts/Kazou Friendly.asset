@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Kazou Friendly
+  m_EditorClassIdentifier: 
+  repFactor: 0
+  studentPop: 0
+  target: {fileID: 0}
+  _dialogueLine: []
+  responses:
+  - responseText: Greet
+    dialogueObject: {fileID: 11400000, guid: c38c39618838e9d49a9c9e51a5cd40c0, type: 2}
+  - responseText: Get to Know
+    dialogueObject: {fileID: 11400000, guid: 57bf604e64b30984f90431bdeb0bde0d, type: 2}
+  - responseText: Compliment
+    dialogueObject: {fileID: 11400000, guid: 0c6db83f1782cac42bec5a3427f05ace, type: 2}
+  - responseText: Favour
+    dialogueObject: {fileID: 11400000, guid: 6502b2429d99ca345b271692ad35d07a, type: 2}
+  - responseText: Gift
+    dialogueObject: {fileID: 0}

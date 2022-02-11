@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Confide
+  m_EditorClassIdentifier: 
+  _dialogueLine:
+  - _npcName: 0
+    _lineText: "I just. . .I-I wasn\u2019t expecting to meet someone new today. It
+      was a bit overwhelming."
+  - _npcName: 2
+    _lineText: "Oh. I\u2019m sorry, I didn\u2019t know. I probably should have asked
+      first. You\u2019re just typically so bright and welcoming. I\u2019ll make sure
+      to ask beforehand, okay?"
+  - _npcName: 0
+    _lineText: E-Eh, thank you, Ryo. Today has just been off putting.
+  - _npcName: 2
+    _lineText: Stuff with your mom?
+  - _npcName: 0
+    _lineText: Yeah. Just threw me off. I was hoping it was just us today.
+  - _npcName: 2
+    _lineText: Well it can be, okay? After class, you and I. Pinkie promise.
+  - _npcName: 3
+    _lineText: '*Ryo extends his tanned pinkie towards Manami. Oceanic eyes peer down
+      at it, before she too wraps her pinkie with his, doing the standard shake.*'
+  - _npcName: 3
+    _lineText: '*They did this a lot, especially when they were younger. It meant
+      they were serious about stuff; even if the act itself is childish.*'
+  - _npcName: 0
+    _lineText: "Pinkie promise. Thank you, Ryo. You\u2019re. . .A-A great friend and
+      I. . .I-I don\u2019t ever want to lose you."
+  - _npcName: 2
+    _lineText: Nonsense. Together forever, okay?
+  - _npcName: 0
+    _lineText: Alrighty. . .
+  - _npcName: 2
+    _lineText: "I need to quickly talk to the teacher though before class, so I\u2019ll
+      see you inside, alright?"
+  - _npcName: 0
+    _lineText: Mhm. Bye, Ryo.
+  - _npcName: 2
+    _lineText: See you there!

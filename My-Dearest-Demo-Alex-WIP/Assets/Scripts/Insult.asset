@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482afdea677fec04381c562d308bac77, type: 3}
+  m_Name: Insult
+  m_EditorClassIdentifier: 
+  _dialogueLine:
+  - _npcName: 0
+    _lineText: "She can barely form a sentence, Ryo. It\u2019s embarrassing, really.
+      Let her stand up for herself. Come on now."
+  - _npcName: 3
+    _lineText: "*Manami watches Habiki, whose hazel hues begin to grow glossy. Ryo\u2019s
+      brows furrow. He doesn\u2019t seem to be liking this one bit.*"
+  - _npcName: 1
+    _lineText: I-I. . .I-I. . .
+  - _npcName: 0
+    _lineText: T-T-TODAY, junior!
+  - _npcName: 2
+    _lineText: "Manami, enough! I don\u2019t know what\u2019s wrong with you today,
+      but until you cool down, good day!"
+  - _npcName: 3
+    _lineText: "*Ryo gently takes hold of Habiki\u2019s hand, leading her away.*"

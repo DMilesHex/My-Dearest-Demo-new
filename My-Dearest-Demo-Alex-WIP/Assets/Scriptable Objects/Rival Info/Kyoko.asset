@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38bab82bd0f25b4b993d7c1fcbd82b3, type: 3}
+  m_Name: Kyoko
+  m_EditorClassIdentifier: 
+  pop: 30
+  portrait: {fileID: 21300000, guid: 73d1851b909b2434ebd90de3e660913d, type: 3}
+  npcName: 5
+  _infoText: 'Very popular. So much so I can''t even talk with her except through
+    her friends. '
