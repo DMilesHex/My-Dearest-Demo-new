@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 93eb8a054c0dd3e458ca065ebaa49f1e
+guid: 0c6f5cb617f0a9242a84c671c6c36787
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8207011036789928095
-    second: jun walk spritesheet_0
+      213: -8197242551436928856
+    second: taru walk cycle spritesheet_0
   - first:
-      213: -6790043426250467986
-    second: jun walk spritesheet_1
+      213: -1724559848785588442
+    second: taru walk cycle spritesheet_1
   - first:
-      213: -720112421984349675
-    second: jun walk spritesheet_2
+      213: -2739065876676592999
+    second: taru walk cycle spritesheet_2
   - first:
-      213: -8338968299006659385
-    second: jun walk spritesheet_3
+      213: -3912580894339230006
+    second: taru walk cycle spritesheet_3
   - first:
-      213: -3910505756388943041
-    second: jun walk spritesheet_4
+      213: -8027339288743372246
+    second: taru walk cycle spritesheet_4
   - first:
-      213: -6244998285479267143
-    second: jun walk spritesheet_5
+      213: -2198747421297085550
+    second: taru walk cycle spritesheet_5
   - first:
-      213: -2839306293664189585
-    second: jun walk spritesheet_6
+      213: -8572444111824527070
+    second: taru walk cycle spritesheet_6
   - first:
-      213: 5951229492528948675
-    second: jun walk spritesheet_7
+      213: 3727733561920604994
+    second: taru walk cycle spritesheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jun walk spritesheet_0
+      name: taru walk cycle spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 448
+        y: 439
         width: 503
-        height: 448
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16f0d64d1f6da1e80800000000000000
-      internalID: -8207011036789928095
+      spriteID: 8a892ef845b8d3e80800000000000000
+      internalID: -8197242551436928856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jun walk spritesheet_1
+      name: taru walk cycle spritesheet_1
       rect:
         serializedVersion: 2
         x: 503
-        y: 448
+        y: 439
         width: 503
-        height: 448
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e655dd0aa7be4c1a0800000000000000
-      internalID: -6790043426250467986
+      spriteID: 62fcb3364f12118e0800000000000000
+      internalID: -1724559848785588442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jun walk spritesheet_2
+      name: taru walk cycle spritesheet_2
       rect:
         serializedVersion: 2
         x: 1006
-        y: 448
+        y: 439
         width: 503
-        height: 448
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 512d6494195a106f0800000000000000
-      internalID: -720112421984349675
+      spriteID: 99a3c4ce812ecf9d0800000000000000
+      internalID: -2739065876676592999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jun walk spritesheet_3
+      name: taru walk cycle spritesheet_3
       rect:
         serializedVersion: 2
         x: 1509
-        y: 448
+        y: 439
         width: 503
-        height: 448
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c4f6788388064c80800000000000000
-      internalID: -8338968299006659385
+      spriteID: ac61ee50868b3b9c0800000000000000
+      internalID: -3912580894339230006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jun walk spritesheet_4
+      name: taru walk cycle spritesheet_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 503
-        height: 448
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3b115abbb71bb9c0800000000000000
-      internalID: -3910505756388943041
+      spriteID: a2a1ae29279299090800000000000000
+      internalID: -8027339288743372246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jun walk spritesheet_5
+      name: taru walk cycle spritesheet_5
       rect:
         serializedVersion: 2
         x: 503
         y: 0
         width: 503
-        height: 448
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b4b513952f4559a0800000000000000
-      internalID: -6244998285479267143
+      spriteID: 293f7caaeda7c71e0800000000000000
+      internalID: -2198747421297085550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jun walk spritesheet_6
+      name: taru walk cycle spritesheet_6
       rect:
         serializedVersion: 2
         x: 1006
         y: 0
         width: 503
-        height: 448
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +267,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f637d9d18f1c898d0800000000000000
-      internalID: -2839306293664189585
+      spriteID: 2216fc1cf7f880980800000000000000
+      internalID: -8572444111824527070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jun walk spritesheet_7
+      name: taru walk cycle spritesheet_7
       rect:
         serializedVersion: 2
         x: 1509
         y: 0
         width: 503
-        height: 448
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c5240741b3079250800000000000000
-      internalID: 5951229492528948675
+      spriteID: 24b44979ce19bb330800000000000000
+      internalID: 3727733561920604994
       vertices: []
       indices: 
       edges: []
