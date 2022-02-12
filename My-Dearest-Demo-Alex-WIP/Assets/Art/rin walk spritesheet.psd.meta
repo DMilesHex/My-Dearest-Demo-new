@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 20c0f3192b432c34ea2854848790119b
+guid: f360f9e8556386442ae61fa3a6ce2627
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3148839637751969648
-    second: orochi walk cycle spritesheet_0
+      213: 4971138490608424823
+    second: rin walk spritesheet_0
   - first:
-      213: 7353502228690334492
-    second: orochi walk cycle spritesheet_1
+      213: -538428286128566352
+    second: rin walk spritesheet_1
   - first:
-      213: -6825771108578145419
-    second: orochi walk cycle spritesheet_2
+      213: -6470232505076947912
+    second: rin walk spritesheet_2
   - first:
-      213: 403626077397004775
-    second: orochi walk cycle spritesheet_3
+      213: -6980597863695392129
+    second: rin walk spritesheet_3
   - first:
-      213: 2660636951618607660
-    second: orochi walk cycle spritesheet_4
+      213: 3705822475296804542
+    second: rin walk spritesheet_4
   - first:
-      213: 5152837148116514792
-    second: orochi walk cycle spritesheet_5
+      213: -6437346105093543472
+    second: rin walk spritesheet_5
   - first:
-      213: -4385715162666384594
-    second: orochi walk cycle spritesheet_6
+      213: 2870152433019834867
+    second: rin walk spritesheet_6
   - first:
-      213: 1136697645729873638
-    second: orochi walk cycle spritesheet_7
+      213: -6467637429129380371
+    second: rin walk spritesheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,7 +85,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -110,7 +110,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -122,12 +122,12 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: orochi walk cycle spritesheet_0
+      name: rin walk spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07730ee97fce2bb20800000000000000
-      internalID: 3148839637751969648
+      spriteID: 7779cf57e180df440800000000000000
+      internalID: 4971138490608424823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orochi walk cycle spritesheet_1
+      name: rin walk spritesheet_1
       rect:
         serializedVersion: 2
         x: 503
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1371240153ec0660800000000000000
-      internalID: 7353502228690334492
+      spriteID: 0bfc844935e1788f0800000000000000
+      internalID: -538428286128566352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orochi walk cycle spritesheet_2
+      name: rin walk spritesheet_2
       rect:
         serializedVersion: 2
         x: 1006
@@ -183,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57b431b575df541a0800000000000000
-      internalID: -6825771108578145419
+      spriteID: 834e3b041dd1536a0800000000000000
+      internalID: -6470232505076947912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orochi walk cycle spritesheet_3
+      name: rin walk spritesheet_3
       rect:
         serializedVersion: 2
         x: 1509
@@ -204,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e1355567c7f99500800000000000000
-      internalID: 403626077397004775
+      spriteID: f72e59e4a3fef1f90800000000000000
+      internalID: -6980597863695392129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orochi walk cycle spritesheet_4
+      name: rin walk spritesheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -225,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2a5189f53b7ce420800000000000000
-      internalID: 2660636951618607660
+      spriteID: ebe89b038e9bd6330800000000000000
+      internalID: 3705822475296804542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orochi walk cycle spritesheet_5
+      name: rin walk spritesheet_5
       rect:
         serializedVersion: 2
         x: 503
@@ -246,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e7fbe6d51e828740800000000000000
-      internalID: 5152837148116514792
+      spriteID: 0d9a7ade2d3f9a6a0800000000000000
+      internalID: -6437346105093543472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orochi walk cycle spritesheet_6
+      name: rin walk spritesheet_6
       rect:
         serializedVersion: 2
         x: 1006
@@ -267,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e23c93bcb4fc223c0800000000000000
-      internalID: -4385715162666384594
+      spriteID: 3f1de5d5e64d4d720800000000000000
+      internalID: 2870152433019834867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orochi walk cycle spritesheet_7
+      name: rin walk spritesheet_7
       rect:
         serializedVersion: 2
         x: 1509
@@ -288,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ee70ce7c7c56cf00800000000000000
-      internalID: 1136697645729873638
+      spriteID: dedf8b476065e36a0800000000000000
+      internalID: -6467637429129380371
       vertices: []
       indices: 
       edges: []
@@ -297,7 +297,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 646081a5292a8164989cb42ec602d5df
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -306,7 +306,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
