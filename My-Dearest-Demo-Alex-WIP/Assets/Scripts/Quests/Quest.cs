@@ -11,15 +11,19 @@ public enum Quests
 public class Quest : MonoBehaviour
 {
     [Header("Select a quest")]
-    [SerializeField] private Quests quests;
-    [SerializeField] float points; //I forgot what should be given after the task is done. Just change it to the name that is better for you.
+    [SerializeField] private Quests quest;
+    [SerializeField] float rep; 
 
     [Header("Info about the quest")]
     [SerializeField] private string questInfo;
     [SerializeField] private TextMeshProUGUI questUIText;
 
-
     public static bool OnQuest;
+
+    private void OnEnable()
+    {
+        CompleteQuest.OnQuestCompleted += QuestCompleted;
+    }
 
     private void Awake()
     {
@@ -28,13 +32,13 @@ public class Quest : MonoBehaviour
         if (!OnQuest)
             QuestStarted();
         else
-            Debug.Log("You have already selected a quest");
+            Debug.Log("You have already started a quest");
     }
 
 
     private void QuestStarted()
     {
-        OnQuest = quests switch
+        OnQuest = quest switch
         {
             Quests.Habiki => true,
             Quests.Kazou => true,
@@ -42,5 +46,11 @@ public class Quest : MonoBehaviour
             Quests.Minori => true,
             _ => false,
         };
+    }
+
+    private void QuestCompleted()
+    {
+        OnQuest = false;
+        Destroy(this);
     }
 }

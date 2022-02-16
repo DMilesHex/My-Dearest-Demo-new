@@ -29,8 +29,6 @@ public class Schedules : MonoBehaviour
         OnTime, Late, VeryLate
     }
     [SerializeField] private TimeCycle tc;
-    
-
     [SerializeField] private ClassState cs;
     [SerializeField] private ArriveState a;
     [SerializeField] private LunchState ls;
@@ -45,7 +43,7 @@ public class Schedules : MonoBehaviour
                 switch (cs)
                 {
                     case ClassState.OnTime:
-                Action(8, 0, "Classroom");
+                        Action(8, 0, "Classroom");
                         break;
                     case ClassState.Late:
                         Action(8, 10, "Classroom");
@@ -130,7 +128,6 @@ public class Schedules : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name == location)
             {
-
                 gameObject.SetActive(true);
                 Color32 tempColour = GetComponent<SpriteRenderer>().color;
                 Color32 endColour = GetComponent<SpriteRenderer>().color;
@@ -139,13 +136,13 @@ public class Schedules : MonoBehaviour
                 GetComponent<SpriteRenderer>().color = tempColour;
             }
             else
-
             {
                 Color32 tempColour = GetComponent<SpriteRenderer>().color;
                 Color32 endColour = GetComponent<SpriteRenderer>().color;
                 endColour.a = 0;
                 tempColour = Color32.Lerp(GetComponent<SpriteRenderer>().color, endColour, Time.time);
                 GetComponent<SpriteRenderer>().color = tempColour;
+
                 if (GetComponent<SpriteRenderer>().color.a == 0)
                 {
                     gameObject.SetActive(false);

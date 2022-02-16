@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
-using UnityEditor.Build;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -24,122 +21,98 @@ public class NPC : MonoBehaviour
     {
         RaycastHit2D sightInfo = Physics2D.Raycast(sight.position, sight.right, sov);
 
-        if (sightInfo.collider == true)
-        {
-            if (gameObject.tag == "Teacher")
-            {
-                if (sightInfo.collider.gameObject.CompareTag("Player") == true)
-                {
+        if (sightInfo.collider == true) {
+            if (gameObject.tag == "Teacher") {
+                if (sightInfo.collider.gameObject.CompareTag("Player") == true) {
                     //Player can be seen
                     Debug.Log("Always watching Mike Wazowski");
-                    if (weapon.activeSelf == true)
-                    {
+                    if (weapon.activeSelf == true) {
                         //Player is carrying a weopon
                         gameOver[0].Invoke();
                     }
 
-                    if (playerScript.Sanity <= sanityLevel)
-                    {
+                    if (playerScript.Sanity <= sanityLevel) {
                         gameOver[1].Invoke();
                     }
                 }
             }
-            else if (gameObject.name == "Ryo")
-            {
-                if (sightInfo.collider.gameObject.CompareTag("Player") == true)
-                {
-                    
+            else if (gameObject.name == "Ryo") {
+                if (sightInfo.collider.gameObject.CompareTag("Player") == true) {
+
                     //Player can be seen
                     Debug.Log("Hey Manami");
-                    if (weapon.activeSelf == true)
-                    {
+                    if (weapon.activeSelf == true) {
                         //Player is carrying a weopon
-                        if (weaponCount <= 1 && !seen)
-                        {
+                        if (weaponCount <= 1 && !seen) {
                             Debug.Log("Mildly concerned");
                             weaponCount++;
                             seen = true;
                         }
-                        else if (weaponCount == 2)
-                        {
+                        else if (weaponCount == 2) {
                             Debug.Log("Very concerned");
                             weaponCount++;
                             seen = true;
                         }
-                        else
-                        {
+                        else {
                             gameOver[0].Invoke();
                         }
                     }
 
-                    if (an.GetBool("Bloody") == true)
-                    {
+                    if (an.GetBool("Bloody") == true) {
                         //Player is carrying a weopon
-                        if (bloodyCount <= 1)
-                        {
+                        if (bloodyCount <= 1) {
                             Debug.Log("Mildly concerned");
                             bloodyCount++;
                         }
-                        else if (bloodyCount == 2)
-                        {
+                        else if (bloodyCount == 2) {
                             Debug.Log("Very concerned");
                             bloodyCount++;
                         }
-                        else
-                        {
+                        else {
                             gameOver[2].Invoke();
                         }
                     }
-                    if (an.GetBool("Bloody") == true && weapon.activeSelf)
-                    {
+                    if (an.GetBool("Bloody") == true && weapon.activeSelf) {
                         gameOver[3].Invoke();
                     }
-                    if (playerScript.Sanity <= sanityLevel)
-                    {
+                    if (playerScript.Sanity <= sanityLevel) {
 
-                        if (weaponCount <= 1)
-                        {
+                        if (weaponCount <= 1) {
                             Debug.Log("What's wrong with you");
                             weaponCount++;
                         }
-                        else if (weaponCount == 2)
-                        {
+                        else if (weaponCount == 2) {
                             Debug.Log("Seriously, are you OK");
                             weaponCount++;
                         }
-                        else
-                        {
+                        else {
                             gameOver[1].Invoke();
                         }
                     }
                 }
             }
-            else
-            {
-                if (sightInfo.collider.gameObject.CompareTag("Player") == true)
-                {
+            else {
+                if (sightInfo.collider.gameObject.CompareTag("Player") == true) {
                     //Player can be seen
                     Debug.Log("Player spotted");
-                    if (weapon.activeSelf == true)
-                    {
+                    if (weapon.activeSelf == true) {
                         //Player is carrying a weopon
                         Debug.Log("AAAAAHHHH KNIFE");
                     }
 
-                    if (playerScript.Sanity <= sanityLevel)
-                    {
+                    if (playerScript.Sanity <= sanityLevel) {
                         Debug.Log("Uh...");
                     }
-                    if (an.GetBool("Bloody") == true)
-                    {
+                    if (an.GetBool("Bloody") == true) {
                         Debug.Log("What happened to you?");
                     }
                 }
             }
         }
-        else
-        {
+        else {
             seen = false;
         }
     }
+
+
 }
