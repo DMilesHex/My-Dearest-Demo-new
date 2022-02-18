@@ -8,11 +8,10 @@ public class CompleteQuest : MonoBehaviour
     public static event QuestCompleted OnQuestCompleted;
     [Header("Name of the rival")]
     [SerializeField] private Quests questName;
+    [SerializeField] private DialogueActivator dialogueActivator;
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void Complete(int repIncrease)
     {
-        if (collision.tag == "Player")
-            OnQuestCompleted();
+        dialogueActivator.Rep += repIncrease;
     }
 }

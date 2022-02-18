@@ -13,23 +13,33 @@ MonoBehaviour:
   m_Name: Habiki Favour
   m_EditorClassIdentifier: 
   repFactor: 3
+  studentPop: 0
+  target: {fileID: 0}
   _dialogueLine:
-  - _npcName: 0
+  - npcName: 0
+    portrait: {fileID: 0}
     _lineText: 'Hey, is there anything I can do for you? '
-  - _npcName: 1
+  - npcName: 1
+    portrait: {fileID: 0}
     _lineText: 'M-me? N-n-no, I wouldn''t do that to you. '
-  - _npcName: 5
+  - npcName: 5
+    portrait: {fileID: 0}
     _lineText: 'Hey, Habiki! Don''t be late for class. Though from that last test,
       it wouldn''t even matter. Even your parents know you''re stupid.  '
-  - _npcName: 1
+  - npcName: 0
+    portrait: {fileID: 0}
     _lineText: 'I... I''m sorry, Manami. I have to go. '
-  - _npcName: 0
+  - npcName: 0
+    portrait: {fileID: 0}
     _lineText: 'Wait. '
-  - _npcName: 3
+  - npcName: 0
+    portrait: {fileID: 0}
     _lineText: 'Habiki hesitantly turns to face Manami. There''s a clear burden on
       her shoulders as they slump. '
-  - _npcName: 0
+  - npcName: 0
+    portrait: {fileID: 0}
     _lineText: 'I can tutor you, if you want. '
-  - _npcName: 1
+  - npcName: 0
+    portrait: {fileID: 0}
     _lineText: '-! I... t-thank you. '
   responses: []

@@ -16,10 +16,10 @@ MonoBehaviour:
   studentPop: 0
   target: {fileID: 0}
   _dialogueLine:
-  - _npcName: 2
+  - npcName: 2
+    portrait: {fileID: 21300000, guid: 5620928a9d82f2648a8432f7249c681f, type: 3}
     _lineText: "Oh hey Manami. This is Habiki. I\u2019ve been meaning to introduce
       you to each other - I think you\u2019d make pretty swell friends."
-    portrait: {fileID: 21300000, guid: 5620928a9d82f2648a8432f7249c681f, type: 3}
   responses:
   - responseText: Nice
     dialogueObject: {fileID: 11400000, guid: 23a0e79cc4b9b8146be292851ee823f9, type: 2}

@@ -2414,6 +2414,8 @@ GameObject:
   - component: {fileID: 2881701034227310612}
   - component: {fileID: 1108576106246176308}
   - component: {fileID: 711182999651375346}
+  - component: {fileID: 7148117012690416999}
+  - component: {fileID: 6829443611803670234}
   m_Layer: 9
   m_Name: Habiki
   m_TagString: rival
@@ -2742,6 +2744,35 @@ MonoBehaviour:
   ls: 0
   ls2: 0
   hs: 0
+--- !u!114 &7148117012690416999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408082730876196949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7957dee151ca649a6608bb16092abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: 0
+  rep: 10
+  questInfo: 
+  questUIText: {fileID: 0}
+--- !u!114 &6829443611803670234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408082730876196949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dea6d6c8ee086d47a5fdf19d639a4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 0
 --- !u!1 &8408082731841732194
 GameObject:
   m_ObjectHideFlags: 0

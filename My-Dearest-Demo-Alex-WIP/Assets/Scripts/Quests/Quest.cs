@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public enum Quests
 {
@@ -17,15 +18,18 @@ public class Quest : MonoBehaviour
     [Header("Info about the quest")]
     [SerializeField] private string questInfo;
     [SerializeField] private TextMeshProUGUI questUIText;
-
+    public UnityEvent startQuest;
+    
     public static bool OnQuest;
+    public UnityEvent complete;
+    
 
     private void OnEnable()
     {
         CompleteQuest.OnQuestCompleted += QuestCompleted;
     }
 
-    private void Awake()
+    public void Init()
     {
         questUIText.text = questInfo;
 
@@ -40,6 +44,8 @@ public class Quest : MonoBehaviour
     {
         OnQuest = quest switch
         {
+
+
             Quests.Habiki => true,
             Quests.Kazou => true,
             Quests.Rin => true,
@@ -48,8 +54,9 @@ public class Quest : MonoBehaviour
         };
     }
 
-    private void QuestCompleted()
+    public void QuestCompleted()
     {
+    complete.Invoke();
         OnQuest = false;
         Destroy(this);
     }

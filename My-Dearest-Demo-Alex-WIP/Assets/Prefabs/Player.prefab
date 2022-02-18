@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 5477995735012788434}
   - component: {fileID: 5477995735012788438}
   - component: {fileID: 5477995735012788432}
-  - component: {fileID: 5477995735012788437}
   - component: {fileID: 5477995735012788436}
   - component: {fileID: 5477995735012788435}
   - component: {fileID: 5477995735012788433}
@@ -203,7 +202,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 31df5a15662a8f840a9e7cfa1904da9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -228,16 +227,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  rb: {fileID: 5477995735012788433}
   movement: {x: 0, y: 0}
-  sanity: 0
-  sanityMax: 100
+  Sanity: 0
+  SanityMax: 100
   weapons:
   - {fileID: 11400000, guid: 814b133d272ce6946a66b6fbd91ef17c, type: 2}
   - {fileID: 11400000, guid: 1f45b21add6dc9a4cacb55338c217bd8, type: 2}
   weaponheld: {fileID: 0}
   inventory: {fileID: 0}
-  an: {fileID: 0}
+  studyPoints: 0
+  dialogueUI: {fileID: 0}
+  dialogueActivator: {fileID: 0}
+  button: {fileID: 0}
+  button2: {fileID: 0}
+  responseContainer: {fileID: 0}
+  secondResponseContainer: {fileID: 0}
+  panelColour: {fileID: 0}
+  canvas: {fileID: 0}
+  buttonCanvas: {fileID: 0}
+  buttonPrompt: {fileID: 0}
   chopped: 0
   tc: {fileID: 0}
   tutor:
@@ -245,46 +253,16 @@ MonoBehaviour:
       m_Calls: []
   tutorButtons: {fileID: 0}
   litter: 0
-  moneyText: {fileID: 0}
-  money: 0
   loadBar:
     m_PersistentCalls:
       m_Calls: []
   ie: {fileID: 0}
-  studyPoints: 0
-  dialogueUI: {fileID: 0}
   repIncrease: 0
-  button: {fileID: 0}
-  button2: {fileID: 0}
-  da: {fileID: 0}
-  responseContainer: {fileID: 0}
-  secondResponseContainer: {fileID: 0}
   canGainRep: 1
   add: {fileID: 0}
   psych: 0
   bio: 0
-  panelColour: {fileID: 0}
-  canvas: {fileID: 0}
-  buttonCanvas: {fileID: 0}
-  buttonPrompt: {fileID: 0}
---- !u!114 &5477995735012788437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5477995735012788447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70985ccc70b45204fbc963e7b455c8c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFull: 00000000
-  slots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  win: []
 --- !u!95 &5477995735012788436
 Animator:
   serializedVersion: 3

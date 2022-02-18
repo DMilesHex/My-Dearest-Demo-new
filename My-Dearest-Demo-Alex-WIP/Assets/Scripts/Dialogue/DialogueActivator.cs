@@ -27,6 +27,7 @@ public class DialogueActivator : MonoBehaviour, I_Interactable
         }
 
         pl.DialogueUI.ShowDialogue(dialogueObject, studentIndex);
+        Debug.Log(gameObject.name);
         
     }
 
