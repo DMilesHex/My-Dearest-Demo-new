@@ -62,11 +62,14 @@ public class player : MonoBehaviour
     public AddPoints add;
     public int psych, bio;
     public List<UnityEvent> win;
+    public List<UnityEvent> questComplete;
 
     //Private variables
     private Rigidbody2D rb;
     private Animator anim;
     private GameObject promptPrefab;
+
+    [SerializeField] private GameObject rival;
     #endregion
 
     public void Awake()
@@ -78,7 +81,8 @@ public class player : MonoBehaviour
     }
 
     public void Equip(int equipnumber)
-    {       
+    {
+        Debug.Log("equipped");
         Weapon weapontoequip = inventory.InventoryList[equipnumber];
         weaponheld = weapontoequip.weaponprefab;
     }
@@ -121,7 +125,7 @@ public class player : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Outside")
         {
-            if (Input.GetKeyDown(KeyCode.E) && tc.hours > 16)
+            if (Input.GetKey(KeyCode.E) && tc.hours > 16)
             {
                 tutorButtons.SetActive(true);
                 tc.hours += 1;
@@ -133,14 +137,21 @@ public class player : MonoBehaviour
                 dialogueActivator.Pop -= 5;
             }
         }
-
-        if (dialogueActivator.Rep >= 15)
+        if (dialogueActivator != null)
         {
-            win[1].Invoke();
+            if (dialogueActivator.Rep >= 100)
+            {
+                win[1].Invoke();
+            }
+            if (dialogueActivator.Pop <= -10)
+            {
+                win[2].Invoke();
+            }
         }
-        if (dialogueActivator.Pop <= -10)
+
+        if (!rival.activeSelf)
         {
-            win[2].Invoke();
+            win[3].Invoke();
         }
     }
 
@@ -249,6 +260,26 @@ public class player : MonoBehaviour
         tempColour = Color32.Lerp(panelColour.color, fadein, Time.time);
         panelColour.color = tempColour;
         loadBar.Invoke();
+    }
+
+    public void QuestChecks()
+    {
+        if (tc.hours == 7 && SceneManager.GetActiveScene().name == "Pool")
+        {
+            questComplete[0].Invoke();
+        }
+
+        if (tc.hours == 1 && tc.minutes == 30 
+            && SceneManager.GetActiveScene().name == "Third Floor Hallway")
+        {
+            questComplete[1].Invoke();
+        }
+
+        if (tc.hours == 7 && tc.minutes == 30
+       && SceneManager.GetActiveScene().name == "SampleScene")
+        {
+            questComplete[2].Invoke();
+        }
     }
 
 }

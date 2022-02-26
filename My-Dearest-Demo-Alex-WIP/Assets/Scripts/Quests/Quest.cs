@@ -31,17 +31,22 @@ public class Quest : MonoBehaviour
 
     public void Init()
     {
-        questUIText.text = questInfo;
+        
+        
 
         if (!OnQuest)
+        {
+            
             QuestStarted();
+        }
         else
             Debug.Log("You have already started a quest");
     }
 
 
-    private void QuestStarted()
+    public void QuestStarted()
     {
+        Debug.Log("Please work");
         OnQuest = quest switch
         {
 
@@ -56,8 +61,11 @@ public class Quest : MonoBehaviour
 
     public void QuestCompleted()
     {
-    complete.Invoke();
+    if (OnQuest)
+    {
+        complete.Invoke();
         OnQuest = false;
         Destroy(this);
+    }
     }
 }

@@ -165,10 +165,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tc: {fileID: 0}
   cs: 0
-  a: 0
-  ls: 0
-  ls2: 6
-  hs: 2
+  a: 1
+  ls: 1
+  ls2: 1
+  hs: 1
 --- !u!1 &1610569846
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,10 +334,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tc: {fileID: 0}
   cs: 0
-  a: 0
-  ls: 0
-  ls2: 6
-  hs: 2
+  a: 1
+  ls: 1
+  ls2: 3
+  hs: 1
 --- !u!1 &1965127687
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,9 +504,9 @@ MonoBehaviour:
   tc: {fileID: 0}
   cs: 0
   a: 0
-  ls: 0
-  ls2: 6
-  hs: 2
+  ls: 1
+  ls2: 5
+  hs: 0
 --- !u!1 &2007561516
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,11 +671,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tc: {fileID: 0}
-  cs: 0
-  a: 0
-  ls: 0
-  ls2: 6
-  hs: 2
+  cs: 1
+  a: 1
+  ls: 1
+  ls2: 5
+  hs: 0
 --- !u!1 &2226507082184145112
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,9 +842,9 @@ MonoBehaviour:
   tc: {fileID: 0}
   cs: 0
   a: 0
-  ls: 0
+  ls: 1
   ls2: 6
-  hs: 2
+  hs: 1
 --- !u!1 &2848153531118741047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,9 +1011,9 @@ MonoBehaviour:
   tc: {fileID: 0}
   cs: 0
   a: 0
-  ls: 0
-  ls2: 6
-  hs: 2
+  ls: 1
+  ls2: 7
+  hs: 1
 --- !u!1 &2976593900725995168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,6 +1078,8 @@ GameObject:
   - component: {fileID: 315570028099041619}
   - component: {fileID: 944485091032553741}
   - component: {fileID: 5185187526728732747}
+  - component: {fileID: 398883763}
+  - component: {fileID: 398883765}
   m_Layer: 9
   m_Name: Rin
   m_TagString: rival
@@ -1189,7 +1191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54dfd10c575ddd14cb3490b8638eed27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueObject: {fileID: 11400000, guid: 0a4110a61e2d37f44bc0f9c78714b808, type: 2}
+  dialogueObject: {fileID: 11400000, guid: 1ea74eb6516ce924dabffd71c4a0214d, type: 2}
   Rep: 0
   Pop: 0
   canvas: {fileID: 0}
@@ -1246,7 +1248,19 @@ MonoBehaviour:
   - name: Friendly
     onPickedResponse:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - name: Mean
     onPickedResponse:
       m_PersistentCalls:
@@ -1329,6 +1343,92 @@ MonoBehaviour:
   ls: 1
   ls2: 3
   hs: 2
+--- !u!114 &398883763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3705033520318591357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7957dee151ca649a6608bb16092abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: 2
+  rep: 0
+  questInfo: 
+  questUIText: {fileID: 0}
+  startQuest:
+    m_PersistentCalls:
+      m_Calls: []
+  complete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 398883763}
+        m_TargetAssemblyTypeName: Quest, Assembly-CSharp
+        m_MethodName: QuestCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7919053423284740170}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: UpdateDialogueObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e14328ba6a4f36a4db4a914a7db83c5e,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7919053423284740170}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: player, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7919053423284740170}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: UpdateDialogueObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1ea74eb6516ce924dabffd71c4a0214d,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &398883765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3705033520318591357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dea6d6c8ee086d47a5fdf19d639a4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 2
+  dialogueActivator: {fileID: 7919053423284740170}
 --- !u!1 &4192472501526412869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,11 +1592,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tc: {fileID: 0}
-  cs: 0
-  a: 0
-  ls: 0
-  ls2: 6
-  hs: 2
+  cs: 1
+  a: 1
+  ls: 1
+  ls2: 4
+  hs: 0
 --- !u!1 &5563730482444569233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,7 +1626,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5563730482444569233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.24, y: -0.28, z: 0}
+  m_LocalPosition: {x: -19.25, y: 0.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2976593900725995169}
@@ -1662,10 +1762,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tc: {fileID: 0}
   cs: 0
-  a: 0
-  ls: 0
-  ls2: 6
-  hs: 2
+  a: 1
+  ls: 1
+  ls2: 0
+  hs: 1
 --- !u!1 &5800871181257482789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,9 +1932,9 @@ MonoBehaviour:
   tc: {fileID: 0}
   cs: 0
   a: 0
-  ls: 0
-  ls2: 6
-  hs: 2
+  ls: 1
+  ls2: 4
+  hs: 0
 --- !u!1 &7647818309195769248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,9 +2101,9 @@ MonoBehaviour:
   tc: {fileID: 0}
   cs: 0
   a: 0
-  ls: 0
-  ls2: 6
-  hs: 2
+  ls: 1
+  ls2: 5
+  hs: 0
 --- !u!1 &8324847741533833578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2431,7 +2531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8408082730876196949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -15.67, y: 0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2976593900725995169}
@@ -2581,6 +2681,18 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 11400000, guid: 39e409b9ced3fa647a65a860eb54a39c,
               type: 2}
             m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7148117012690416999}
+          m_TargetAssemblyTypeName: Quest, Assembly-CSharp
+          m_MethodName: Init
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -2758,8 +2870,76 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest: 0
   rep: 10
-  questInfo: 
+  questInfo: Tutor Habiki
   questUIText: {fileID: 0}
+  startQuest:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7148117012690416999}
+        m_TargetAssemblyTypeName: Quest, Assembly-CSharp
+        m_MethodName: Init
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  complete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6829443611803670234}
+        m_TargetAssemblyTypeName: CompleteQuest, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8408082730876196950}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: UpdateDialogueObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b56d0d5dc69ad8f4fa4385ceae229412,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8408082730876196950}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: player, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8408082730876196950}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: UpdateDialogueObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 39e409b9ced3fa647a65a860eb54a39c,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6829443611803670234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2773,6 +2953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questName: 0
+  dialogueActivator: {fileID: 8408082730876196950}
 --- !u!1 &8408082731841732194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,6 +2971,8 @@ GameObject:
   - component: {fileID: 2881701035259446819}
   - component: {fileID: 1108576105204586499}
   - component: {fileID: 173238914988062568}
+  - component: {fileID: 888453203}
+  - component: {fileID: 888453204}
   m_Layer: 9
   m_Name: Minori
   m_TagString: rival
@@ -2805,7 +2988,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8408082731841732194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.81, y: 0, z: 0}
+  m_LocalPosition: {x: -8.67, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2976593900725995169}
@@ -3074,6 +3257,92 @@ MonoBehaviour:
   ls: 1
   ls2: 2
   hs: 1
+--- !u!114 &888453203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408082731841732194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dea6d6c8ee086d47a5fdf19d639a4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 3
+  dialogueActivator: {fileID: 8408082731841732193}
+--- !u!114 &888453204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408082731841732194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7957dee151ca649a6608bb16092abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: 0
+  rep: 0
+  questInfo: 
+  questUIText: {fileID: 0}
+  startQuest:
+    m_PersistentCalls:
+      m_Calls: []
+  complete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 888453203}
+        m_TargetAssemblyTypeName: CompleteQuest, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8408082731841732193}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: UpdateDialogueObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 9b770f281a50a29448e470d60080889a,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8408082731841732193}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: player, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8408082731841732193}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: UpdateDialogueObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 0a4110a61e2d37f44bc0f9c78714b808,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8408082732160617345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3091,6 +3360,9 @@ GameObject:
   - component: {fileID: 2881701035578094528}
   - component: {fileID: 1108576105389272544}
   - component: {fileID: 7068445714896702129}
+  - component: {fileID: 1437761148}
+  - component: {fileID: 1437761150}
+  - component: {fileID: 2976593901475734048}
   m_Layer: 9
   m_Name: Kazou
   m_TagString: rival
@@ -3106,7 +3378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8408082732160617345}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.91, y: 0, z: 0}
+  m_LocalPosition: {x: -8.79, y: -0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2976593900725995169}
@@ -3202,7 +3474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54dfd10c575ddd14cb3490b8638eed27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueObject: {fileID: 11400000, guid: 0a4110a61e2d37f44bc0f9c78714b808, type: 2}
+  dialogueObject: {fileID: 11400000, guid: ea0daabbfc6bc914f9eaefa3515c48d4, type: 2}
   Rep: 0
   Pop: 0
   canvas: {fileID: 0}
@@ -3242,13 +3514,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd32688b66b35447a019113fce13afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueObject: {fileID: 11400000, guid: ea0daabbfc6bc914f9eaefa3515c48d4, type: 2}
+  dialogueObject: {fileID: 11400000, guid: cc75ce8a361033d42ab870d08c31cc8e, type: 2}
   events:
-  - name: Friendly
+  - name: Greet
     onPickedResponse:
       m_PersistentCalls:
         m_Calls: []
-  - name: Mean
+  - name: Get to Know
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Compliment
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Favour
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1437761148}
+          m_TargetAssemblyTypeName: Quest, Assembly-CSharp
+          m_MethodName: Init
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Gift
     onPickedResponse:
       m_PersistentCalls:
         m_Calls: []
@@ -3376,3 +3672,135 @@ MonoBehaviour:
   ls: 1
   ls2: 2
   hs: 1
+--- !u!114 &1437761148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408082732160617345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7957dee151ca649a6608bb16092abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: 1
+  rep: 0
+  questInfo: 
+  questUIText: {fileID: 0}
+  startQuest:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  complete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1437761150}
+        m_TargetAssemblyTypeName: CompleteQuest, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8408082732160617346}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: UpdateDialogueObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 2bf18fd5957dcb9448239b651fde0435,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8408082732160617346}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: player, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8408082732160617346}
+        m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+        m_MethodName: UpdateDialogueObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: ea0daabbfc6bc914f9eaefa3515c48d4,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1437761150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408082732160617345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dea6d6c8ee086d47a5fdf19d639a4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 1
+  dialogueActivator: {fileID: 8408082732160617346}
+--- !u!114 &2976593901475734048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408082732160617345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7957dee151ca649a6608bb16092abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: 1
+  rep: 0
+  questInfo: 
+  questUIText: {fileID: 0}
+  startQuest:
+    m_PersistentCalls:
+      m_Calls: []
+  complete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

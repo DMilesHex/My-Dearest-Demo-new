@@ -100,6 +100,25 @@ public class TimeCycle : MonoBehaviour
             m_event[0].Invoke();
         }
 
+        if (hours >= 13 && minutes < 30)
+        {
+            m_event[1].Invoke();
+        }
+
+        if (hours >= 13 && minutes >= 30)
+        {
+            m_event[2].Invoke();
+        }
+
+        if (hours >= 7 && hours < 9)
+        {
+            m_event[3].Invoke();
+        }
+
+        if (hours >= 16 && hours < 18)
+        {
+            m_event[4].Invoke();
+        }
         switch (days)
         {
             case 0:

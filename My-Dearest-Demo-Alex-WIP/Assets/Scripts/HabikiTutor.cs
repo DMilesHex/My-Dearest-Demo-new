@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class HabikiTutor : MonoBehaviour
 {
@@ -8,10 +9,12 @@ public class HabikiTutor : MonoBehaviour
     [SerializeField] private bool tutorQuestDone;
     [SerializeField] private DialogueActivator dialogueActivator;
     [SerializeField] private GameObject tutorButtons;
+    [SerializeField] private UnityEvent complete;
 
     public void RightAnswers()
     {
-        tutorQuestDone = true;
+        complete.Invoke();
+
         tutorButtons.SetActive(false);
     }
 

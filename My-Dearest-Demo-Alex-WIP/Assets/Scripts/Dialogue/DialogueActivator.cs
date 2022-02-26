@@ -9,8 +9,8 @@ public class DialogueActivator : MonoBehaviour, I_Interactable
     [SerializeField] private DialogueObject dialogueObject;
     public int Rep;
     public int Pop;
-
     
+
     [SerializeField] private RectTransform canvas, buttonPrompt;
     [SerializeField] private GameObject promptPrefab;
     [SerializeField] private int studentIndex;
@@ -20,12 +20,12 @@ public class DialogueActivator : MonoBehaviour, I_Interactable
     {
         DialogueResponseEvents dialogue = GetComponent<DialogueResponseEvents>();
         ResponseEvent[] responseEvents = dialogue.Events;
-        if (dialogue)
-        {
-            Debug.Log(responseEvents.Length);
-            pl.DialogueUI.AddResponseEvents(responseEvents);
-        }
-
+            if (dialogue)
+            {
+                Debug.Log(responseEvents.Length);
+                pl.DialogueUI.AddResponseEvents(responseEvents);
+            }
+        
         pl.DialogueUI.ShowDialogue(dialogueObject, studentIndex);
         Debug.Log(gameObject.name);
         
